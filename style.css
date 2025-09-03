@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #404040;
+  padding: 14px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.enlaces-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.enlaces-nav li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.enlaces-nav li a:hover {
+  color: white;
+}
+
+.boton-sesion {
+  background-color: #20b2aa;
+  color: white;
+  padding: 9px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.boton-sesion:hover {
+  background-color: #1a9b94;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 30px;
+}
+
+.seccion-principal {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.encabezado-perfil {
+  background: linear-gradient(135deg, #20b2aa, #48d1cc);
+  height: 120px;
+  position: relative;
+}
+
+.info-perfil {
+  padding: 80px 30px 30px;
+  position: relative;
+}
+
+.avatar-perfil {
+  position: absolute;
+  top: -50px;
+  left: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nombre-perfil {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.titulo-perfil {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.descripcion-perfil {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.enlace-editar {
+  color: #20b2aa;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.enlace-editar:hover {
+  text-decoration: underline;
+}
+
+.seccion-educacion {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-seccion {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.item-educacion {
+  margin-bottom: 15px;
+}
+
+.titulo-educacion {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.detalles-educacion {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.barra-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.seccion-lateral {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-lateral {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.item-conexion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.item-conexion:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.avatar-conexion {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.info-conexion {
+  flex: 1;
+}
+
+.nombre-conexion {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+.acciones-conexion {
+  display: flex;
+  gap: 8px;
+}
+
+.boton-accion {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 12px;
+}
+
+.boton-aceptar {
+  background-color: #20b2aa;
+  color: white;
+  border-color: #20b2aa;
+}
+
+.boton-rechazar {
+  color: #999;
+}
+
+.boton-accion:hover {
+  transform: scale(1.1);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #eee;
+  margin: 20px 0;
+}
+
+.contador-conexiones {
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .info-perfil {
+    padding: 70px 20px 20px;
+  }
+
+  .avatar-perfil {
+    left: 20px;
+  }
+}
